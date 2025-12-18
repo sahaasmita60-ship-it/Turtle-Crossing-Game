@@ -15,3 +15,8 @@ class Score(Turtle):
     def inclevel(self):
         self.level+=1
         self.createlevel()
+
+    def gameover(self):
+        self.clear()
+        self.goto(0,0)
+        self.write(f"Game Over", align="center",font=("Arial",50,"normal"))
