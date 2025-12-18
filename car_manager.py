@@ -1,33 +1,33 @@
-import time
-from turtle import Turtle, Screen
+from turtle import Turtle
 from player import Player
-from car_manager import CarManager
-from score import Score
-move_speed=0.1
-car=CarManager()
 player=Player()
-score=Score()
-screen = Screen()
-screen.setup(width=600, height=600)
-screen.tracer(0)
-screen.listen()
-screen.onkey(player.forward,"Up")
-player.createplayer()
-game_is_on = True
+colors = ["red", "orange", "yellow", "green", "blue", "purple"]
+starting_move_distance = 5
+move_increment = 10
+import random
+game_is_on=True
 
-while game_is_on:
-    time.sleep(move_speed)
-    screen.update()
-    car.createcar()
-    car.move()
+class CarManager:
+
+    def __init__(self):
+      self.all=[]
+
+      
+    def createcar(self):
     
-    if player.t.ycor()>290:
-       score.inclevel()
-       player.reset()
-       move_speed*=0.82
-    for newcar in car.all:
-     if newcar.distance(player.t)<20:
-        game_is_on=False
-        score.gameover()
+     self.chance=random.randint(1,6)
+     if self.chance==1:
+        self.t=Turtle()
+        self.t.penup()
+        self.t.shape("square")
+        self.t.shapesize(1,3)
+        self.t.color(random.choice(colors))
+        self.num=random.randint(-250,250)
+        self.t.goto(300,self.num)
+        self.all.append(self.t)
+        
+    def move(self):
+        for self.t in self.all:
+         self.t.backward(10)
+    
 
-screen.exitonclick()
