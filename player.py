@@ -14,3 +14,7 @@ class Player():
 
    def reset(self):
       self.t.goto(0,-280)
+
+   def createagain(self):
+      self.t.clear()
+      self.t.goto(0,-280)
