@@ -38,7 +38,7 @@ A simple arcade-style game built with Python’s Turtle graphics, where you cont
 
  Clone or run the repository:
 ```bash
-git clone <your-repo-link>
+git clone https://github.com/asmita-saha-07/Turtle-Crossing-Game.git
 cd Turtle-Crossing-Game
 python main.py
 
