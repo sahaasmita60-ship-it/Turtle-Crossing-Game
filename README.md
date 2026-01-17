@@ -20,6 +20,7 @@ A simple arcade-style game built with Python’s Turtle graphics, where you cont
 - **Moving Cars**: Randomly generated cars that move left across the screen.
 - **Level System**: Tracks the level; each crossing speeds up the game.
 - **Collision Detection**: Ends the game if the turtle touches a car.
+- **Highscore tracking**: Tracks the highscore and updates it.
 
 ---
 
