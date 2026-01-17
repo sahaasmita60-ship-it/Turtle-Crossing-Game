@@ -1,6 +1,6 @@
 # Turtle Crossing Game 🐢🚗
 
-A simple arcade-style game built with Python’s Turtle graphics, where you control a turtle trying to cross a busy road while avoiding cars. Each successful crossing increases the level and speeds up the game.
+A simple arcade-style game built with Python’s Turtle graphics, where you control a turtle trying to cross a busy road while avoiding cars. Each successful crossing increases the level, speeds up the game and keeps track of highscore as well.
 
 ---
 
